@@ -8,8 +8,8 @@
   <a href="https://github.com/bconnorwhite/fs-safe">
     <img alt="TypeScript" src="https://img.shields.io/github/languages/top/bconnorwhite/fs-safe.svg">
   </a>
-  <a href='https://coveralls.io/github/bconnorwhite/fs-safe?branch=master'>
-    <img alt="Coverage Status" src="https://img.shields.io/coveralls/github/bconnorwhite/fs-safe.svg?branch=master">
+  <a href="https://coveralls.io/github/bconnorwhite/fs-safe?branch=master">
+    <img alt="Coverage Status" src="https://coveralls.io/repos/github/bconnorwhite/fs-safe/badge.svg?branch=master" />
   </a>
   <a href="https://github.com/bconnorwhite/fs-safe">
     <img alt="GitHub Stars" src="https://img.shields.io/github/stars/bconnorwhite/fs-safe?label=Stars%20Appreciated%21&style=social">
