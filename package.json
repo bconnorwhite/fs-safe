@@ -1,0 +1,81 @@
+{
+  "name": "fs-safe",
+  "version": "1.0.0",
+  "description": "A simple fs wrapper that doesn't throw",
+  "license": "MIT",
+  "author": {
+    "name": "Connor White",
+    "email": "connor.bcw@gmail.com",
+    "url": "https://connorwhite.org"
+  },
+  "homepage": "https://connorwhite.org/github/fs-safe",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/fs-safe.git"
+  },
+  "keywords": [
+    "fs",
+    "safe",
+    "fs-safe",
+    "read",
+    "write",
+    "remove",
+    "watch",
+    "exists",
+    "dir",
+    "file",
+    "directory",
+    "directories",
+    "files",
+    "recursive",
+    "throw",
+    "without",
+    "try",
+    "catch",
+    "simple",
+    "make",
+    "executable",
+    "error",
+    "errors"
+  ],
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "bob build",
+    "commit": "bob commit",
+    "lint": "bob lint",
+    "release": "bob publish",
+    "test": "bob test"
+  },
+  "dependencies": {
+    "dir-exists-safe": "^1.0.1",
+    "file-exists-safe": "^1.0.2",
+    "make-executable": "^1.0.1",
+    "read-dir-safe": "^1.0.1",
+    "read-file-safe": "^1.0.9",
+    "read-json-safe": "^2.0.2",
+    "remove-dir-safe": "^1.0.1",
+    "remove-file-safe": "^1.0.1",
+    "watch-dir-safe": "^1.0.2",
+    "watch-file-safe": "^1.0.1",
+    "write-dir-safe": "^1.0.1",
+    "write-file-safe": "^1.2.2",
+    "write-json-safe": "^2.0.1"
+  },
+  "devDependencies": {
+    "@bconnorwhite/bob": "^2.9.2"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-bob"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "bob lint commit"
+    }
+  },
+  "npmpackagejsonlint": {
+    "extends": "npm-package-json-lint-config-bob"
+  }
+}
