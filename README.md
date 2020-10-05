@@ -67,7 +67,7 @@ npm install fs-safe
 ### JSON
 - [readJSON](#readjson)
 - [writeJSON](#writejson)
-
+- [mergeJSON](#mergejson)
 
 ### fileExists
 
@@ -266,6 +266,16 @@ type FileWatcher = {
 }
 ```
 
+### makeExecutable
+
+```ts
+import { makeExecutable, makeExecutableSync } from "make-executable";
+
+function makeExecutable(path: string): Promise<boolean | undefined>;
+
+function makeExecutableSync(path: string): boolean | undefined;
+```
+
 ### readJSON
 
 #### Read a JSONValue:
@@ -331,14 +341,65 @@ type Options = {
 }
 ```
 
-### makeExecutable
+### mergeJSON
 
+#### Usage
+
+##### For existing files:
 ```ts
-import { makeExecutable, makeExecutableSync } from "make-executable";
+import { mergeJSON } from "fs-safe";
 
-function makeExecutable(path: string): Promise<boolean | undefined>;
+// old-file.json (before):
+// {
+//  "ok": true
+// }
+//
+mergeJSON("old-file.json", { test: 1 });
 
-function makeExecutableSync(path: string): boolean | undefined;
+// old-file.json (after):
+// {
+//   "ok": true,
+//   "test": 1
+// }
+//
+```
+
+##### For new files:
+```ts
+import { mergeJSON } from "fs-safe";
+
+mergeJSON("new-file.json", { test: 1 });
+
+// new-file.json:
+// {
+//   "test": 1
+// }
+//
+
+```
+
+#### Types
+```ts
+import { mergeJSON, mergeJSONSync, JSONObject } from "fs-safe";
+
+function mergeJSON(path: string, object: JSONObject, options?: Options): Promise<boolean>;
+
+function mergeJSONSync(path: string, object: JSONObject, options?: Options): boolean;
+
+type Options = {
+  /**
+   * Output formatted JSON. Default: `true`
+   */
+  pretty?: boolean;
+  /**
+   * Recursively create parent directories if needed. Default: `true`
+   */
+  recursive?: boolean;
+  /**
+   * Ensure file ends with a newline. Default: `true`
+   */
+  appendNewline?: boolean;
+}
 ```
 
 <br />
@@ -348,6 +409,7 @@ function makeExecutableSync(path: string): boolean | undefined;
 - [dir-exists-safe](https://www.npmjs.com/package/dir-exists-safe): Check if a directory exists without try catch
 - [file-exists-safe](https://www.npmjs.com/package/file-exists-safe): Check if a file exists without try catch
 - [make-executable](https://www.npmjs.com/package/make-executable): Set the executable bits on a file
+- [merge-json-file](https://www.npmjs.com/package/merge-json-file): Merge a JSON file with a JSON object
 - [read-dir-safe](https://www.npmjs.com/package/read-dir-safe): Read directories recursively or non-recursively
 - [read-file-safe](https://www.npmjs.com/package/read-file-safe): Read files without try catch
 - [read-json-safe](https://www.npmjs.com/package/read-json-safe): Read JSON files without try catch

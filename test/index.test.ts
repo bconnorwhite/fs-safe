@@ -31,4 +31,6 @@ test("export sanity check", () => {
   expect(typeof fs.readJSONArraySync).toBe("function");
   expect(typeof fs.writeJSON).toBe("function");
   expect(typeof fs.writeJSONSync).toBe("function");
+  expect(typeof fs.mergeJSON).toBe("function");
+  expect(typeof fs.mergeJSONSync).toBe("function");
 });

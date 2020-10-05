@@ -53,6 +53,7 @@
     "dir-exists-safe": "^1.0.1",
     "file-exists-safe": "^1.0.2",
     "make-executable": "^1.0.1",
+    "merge-json-file": "^1.0.1",
     "read-dir-safe": "^1.0.1",
     "read-file-safe": "^1.0.9",
     "read-json-safe": "^2.0.2",
