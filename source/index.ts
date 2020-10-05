@@ -22,7 +22,7 @@ export {
   JSONArray,
   JSONValue
 } from "read-json-safe";
-export { writeJSON, writeJSONSync } from "write-json-safe";
+export { writeJSON, writeJSONSync, Options as WriteJSONOptions } from "write-json-safe";
 export { mergeJSON, mergeJSONSync } from "merge-json-file";
 
 export { makeExecutable, makeExecutableSync } from "make-executable";
