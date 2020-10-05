@@ -6694,6 +6694,11 @@ read-file-safe@^1.0.1, read-file-safe@^1.0.5:
   resolved "https://registry.yarnpkg.com/read-file-safe/-/read-file-safe-1.0.7.tgz#2d1229aa24b6925e77fc2561af87c35d618ff3f9"
   integrity sha512-lzxOq0SnjXS2H++CLhN7+C5IyPSvMjJTWjDXDPABqmkdrE2PewbMphk6ckqMje4IHR+gENmE0qvC9QmInr3S1g==
 
+read-file-safe@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/read-file-safe/-/read-file-safe-1.0.10.tgz#9ac9118f12cb122614612211f90dad9daf732e39"
+  integrity sha512-qW25fd2uMX3dV6Ui/R0jYK1MhTpjx8FO/VHaHTXzwWsGnkNwLRcqYfCXd9qDM+NZ273DPUvP2RaimYuLSu1K/g==
+
 read-file-safe@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/read-file-safe/-/read-file-safe-1.0.9.tgz#e77f3d0e47e37cbec6da4309c005909317538a16"
