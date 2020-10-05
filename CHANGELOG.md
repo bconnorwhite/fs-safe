@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/bconnorwhite/fs-safe/compare/v1.1.0...v1.1.1) (2020-10-05)
+
+
+### Bug Fixes
+
+* bump dependencies ([b496ae7](https://github.com/bconnorwhite/fs-safe/commit/b496ae754844671f2213d0d122f572b078c49e0e))
+
+
+
 # [1.1.0](https://github.com/bconnorwhite/fs-safe/compare/v1.0.0...v1.1.0) (2020-10-05)
 
 
