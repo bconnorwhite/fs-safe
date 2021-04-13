@@ -1,5 +1,5 @@
-export { fileExists, fileExistsSync } from "file-exists-safe";
-export { dirExists, dirExistsSync } from "dir-exists-safe";
+export { fileExists, fileExistsSync, Options as FileExistsOptions } from "file-exists-safe";
+export { dirExists, dirExistsSync, Options as DirExistsOptions } from "dir-exists-safe";
 
 export { writeDir, writeDirSync, Options as WriteDirOptions } from "write-dir-safe";
 export { readDir, readDirSync, Options as ReadDirOptions } from "read-dir-safe";

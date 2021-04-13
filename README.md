@@ -72,21 +72,35 @@ npm install fs-safe
 ### fileExists
 
 ```ts
-import { fileExists, fileExistsSync } from "fs-safe";
+import { fileExists, fileExistsSync, FileExistsOptions } from "fs-safe";
 
-function fileExists(path: string): Promise<boolean | undefined>;
+function fileExists(path: string, options?: FileExistsOptions): Promise<boolean | undefined>;
 
-function fileExistsSync(path: string): boolean | undefined;
+function fileExistsSync(path: string, options?: FileExistsOptions): boolean | undefined;
+
+type FileExistsOptions = {
+    /**
+     * Return true if path is directory. Default: `false`
+     */
+    includeDirectories?: boolean;
+};
 ```
 
 ### dirExists
 
 ```ts
-import { dirExists, dirExistsSync } from "fs-safe";
+import { dirExists, dirExistsSync, DirExistsOptions } from "fs-safe";
 
-function dirExists(path: string): Promise<boolean | undefined>;
+function dirExists(path: string, options?: DirExistsOptions): Promise<boolean | undefined>;
 
-function dirExistsSync(path: string): boolean | undefined;
+function dirExistsSync(path: string, options?: DirExistsOptions): boolean | undefined;
+
+type DirExistsOptions = {
+    /**
+     * Return true if path is file. Default: `false`
+     */
+    includeFiles?: boolean;
+};
 ```
 
 ### readDir
@@ -214,6 +228,10 @@ type WriteFileOptions = {
    * Ensure file ends with a newline. Default: `true`
    */
   appendNewline?: boolean;
+  /**
+   * Write even if file already exists. Default: `true`
+   */
+  overwrite?: boolean;
 }
 ```
 
@@ -338,6 +356,10 @@ type Options = {
    * Ensure file ends with a newline. Default: `true`
    */
   appendNewline?: boolean;
+  /**
+   * Write even if file already exists. Default: `true`
+   */
+  overwrite?: boolean;
 }
 ```
 
