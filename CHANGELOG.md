@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/bconnorwhite/fs-safe/compare/v1.1.2...v1.2.0) (2021-04-13)
+
+
+### Features
+
+* exists options, avoid overwrite option ([4b266a9](https://github.com/bconnorwhite/fs-safe/commit/4b266a904affe37ec077f6a2a34eae0aae4057b0))
+
+
+
 ## [1.1.2](https://github.com/bconnorwhite/fs-safe/compare/v1.1.1...v1.1.2) (2020-10-05)
 
 
